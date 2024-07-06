@@ -1,0 +1,69 @@
+/*Types of selectors:*/
+
+/*universal*/
+/*Typically found in css reset*/ 
+/* * {
+  font-family: monospace;
+  border: 1px solid red;
+} */
+
+html {
+  font-size: 22px;
+}
+
+/*elements:*/
+
+/*body only appear once per page*/
+body {
+  /*font-size: 22px;*/
+  /*boarder are not inherited
+  border: 3px solid black;*/
+}
+
+main {
+  font-family: monospace;
+}
+
+button, input, textarea, select {
+  font: inherit;
+}
+
+/*group selectors*/
+h1, h2 {
+  color: blue;
+}
+
+/*class*/
+/*Most common selector with css*/
+.gray {
+  color: gray;
+}
+
+/*paragraph*/
+p {
+  color: purple;
+  /*color: purple!important;*/
+}
+
+p {
+  color: red;
+}
+
+/*nested selectors*/
+/* p span {
+  text-transform: uppercase;
+  background-color: gold;
+} */
+
+.hightlight {
+  text-transform: uppercase;
+  background-color: gold;
+}
+
+/*id*/
+/*More specific selector*/
+/*Not best practice to use ids inside of css*/
+/*Best practice to use classes and sometimes element selectors*/
+#second {
+  font-style: italic;    
+}
